@@ -3,13 +3,20 @@ var app = express();
 var http = require("http").Server(app);
 var io = require("socket.io")(http);
 var path = require('path');
+var port = 3000;
 
 app.use(express.static(path.join(__dirname, 'public')));
 
 io.on("connection", function(socket){
-  
+
 });
 
-http.listen(3000, function(){
-  console.log("Started on port *3000");
-});
+if (process.env.IP){
+  http.listen(port, process.env.IP, function(){
+    console.log('listening on *:' + port);
+  });
+}else{
+  http.listen(port, function(){
+    console.log('listening on *:' + port);
+  });
+}
