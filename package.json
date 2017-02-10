@@ -1,0 +1,19 @@
+{
+  "engines": {
+    "node": "4.4.2"
+  },
+  "name": "countdown",
+  "version": "1.0.0",
+  "description": "Countdown to graduation 2017",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micleo2/countdown.git"
+  },
+  "author": "Michael Leon",
+  "license": "ISC"
+}
