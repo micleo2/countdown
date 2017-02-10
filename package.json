@@ -15,5 +15,9 @@
     "url": "git+https://github.com/micleo2/countdown.git"
   },
   "author": "Michael Leon",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.1",
+    "socket.io": "^1.7.2"
+  }
 }
