@@ -4,6 +4,7 @@ $(document).ready(function(){
   var regDays = $("#regularDays");
   var schoolDays = $("#schoolDays");
   var today = new Date();
+  today.setHours(17);
   regDays.text(createRegMessage(today, graduationDate));
   // schoolDays.text()
   schoolDays.text(createSchoolMessage());
