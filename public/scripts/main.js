@@ -11,7 +11,7 @@ $(document).ready(function(){
 });
 
 function createSchoolMessage(){
-  var daysOff = [(new Date(2017, 02, 20)), (new Date(2017, 03, 3)), (new Date(2017, 03, 27)), (new Date(2017, 03, 28)), (new Date(2017, 03, 29)), (new Date(2017, 03, 30)), (new Date(2017, 03, 31))];
+  var daysOff = [(new Date(2017, 02, 20)), (new Date(2017, 03, 3)), (new Date(2017, 03, 27)), (new Date(2017, 03, 28)), (new Date(2017, 03, 29)), (new Date(2017, 03, 30)), (new Date(2017, 03, 31)), (new Date(2017, 04, 14))];
   var daysLeft = 0;
   var now = new Date();
   for (var d = new Date(now); d <= graduationDate; d.setDate(d.getDate() + 1)) {
